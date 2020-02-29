@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test Suite" parallel="tests" thread-count="3" preserve-order="true">
+    <test name="Android Emulator 1">
+        <parameter name="platform" value="Android 10"/>
+        <parameter name="udid" value="emulator-5554"/>
+        <parameter name="systemPort" value="8200"/>
+        <parameter name="port" value="4756"/>
+        <classes>
+            <class name="com.moin.appium.android.parallel.AndroidParallelTest" />
+        </classes>
+    </test>
+    <test name="Android Emulator 1">
+        <parameter name="platform" value="Android 10"/>
+        <parameter name="udid" value="emulator-5556"/>
+        <parameter name="systemPort" value="8201"/>
+        <parameter name="port" value="4766"/>
+        <classes>
+            <class name="com.moin.appium.android.parallel.AndroidParallelTest" />
+        </classes>
+    </test>
+    <test name="One Plus 7t Pro Real Device">
+        <parameter name="platform" value="Android 10"/>
+        <parameter name="udid" value="15c23e8d"/>
+        <parameter name="systemPort" value="8202"/>
+        <parameter name="port" value="4776"/>
+        <classes>
+            <class name="com.moin.appium.android.parallel.AndroidParallelTest" />
+        </classes>
+    </test>
+</suite>
